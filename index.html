@@ -43,45 +43,45 @@
             
             <div class="service-block">
                 <div class="service-block__main">
-                    <input type="checkbox" id="serv_cameras" class="service-block__checkbox">
-                    <label class="service-block__label" for="serv_cameras">Câmeras (Instalação/Manutenção)</label>
-                    <input type="number" id="val_cameras" class="form__input service-block__price" placeholder="Valor (R$)">
+                    <input type="checkbox" id="serv_montagem" class="service-block__checkbox">
+                    <label class="service-block__label" for="serv_montagem">Montagem de computador</label>
+                    <input type="number" id="val_montagem" class="form__input service-block__price" placeholder="Valor (R$)">
                 </div>
-                <div class="service-block__details" id="detalhe_cameras" style="display: none;">
-                    <textarea id="desc_cameras" class="form__textarea" rows="2" placeholder="Ex: Instalação de 4 câmeras HD..."></textarea>
+                <div class="service-block__details" id="detalhe_montagem" style="display: none;">
+                    <textarea id="desc_montagem" class="form__textarea" rows="2" placeholder="Ex: Montagem de computador intelcore i5..."></textarea>
                 </div>
             </div>
             
             <div class="service-block">
                 <div class="service-block__main">
-                    <input type="checkbox" id="serv_cerca" class="service-block__checkbox">
-                    <label class="service-block__label" for="serv_cerca">Cerca Elétrica</label>
-                    <input type="number" id="val_cerca" class="form__input service-block__price" placeholder="Valor (R$)">
+                    <input type="checkbox" id="serv_limpeza" class="service-block__checkbox">
+                    <label class="service-block__label" for="serv_limpeza">Limpeza computador e acessorios</label>
+                    <input type="number" id="val_limpeza" class="form__input service-block__price" placeholder="Valor (R$)">
                 </div>
-                <div class="service-block__details" id="detalhe_cerca" style="display: none;">
-                    <textarea id="desc_cerca" class="form__textarea" rows="2" placeholder="Ex: Instalação de 40m de cerca..."></textarea>
+                <div class="service-block__details" id="detalhe_limpeza" style="display: none;">
+                    <textarea id="desc_limpeza" class="form__textarea" rows="2" placeholder="Ex: Limpeza de gabinete, limpeza fonte..."></textarea>
                 </div>
             </div>
 
             <div class="service-block">
                 <div class="service-block__main">
-                    <input type="checkbox" id="serv_instalacao" class="service-block__checkbox">
-                    <label class="service-block__label" for="serv_instalacao">Instalação Elétrica (Nova/Reforma)</label>
-                    <input type="number" id="val_instalacao" class="form__input service-block__price" placeholder="Valor (R$)">
+                    <input type="checkbox" id="serv_laudo" class="service-block__checkbox">
+                    <label class="service-block__label" for="serv_laudo">Laudo ou inspenção</label>
+                    <input type="number" id="val_laudo" class="form__input service-block__price" placeholder="Valor (R$)">
                 </div>
-                <div class="service-block__details" id="detalhe_instalacao" style="display: none;">
-                    <textarea id="desc_instalacao" class="form__textarea" rows="2" placeholder="Ex: Substituição da fiação..."></textarea>
+                <div class="service-block__details" id="detalhe_laudo" style="display: none;">
+                    <textarea id="desc_laudo" class="form__textarea" rows="2" placeholder="Levantamento e listagems.."></textarea>
                 </div>
             </div>
 
             <div class="service-block">
                 <div class="service-block__main">
                     <input type="checkbox" id="serv_manutencao" class="service-block__checkbox">
-                    <label class="service-block__label" for="serv_manutencao">Manutenção Elétrica Geral</label>
+                    <label class="service-block__label" for="serv_manutencao">Manutenção Geral</label>
                     <input type="number" id="val_manutencao" class="form__input service-block__price" placeholder="Valor (R$)">
                 </div>
                 <div class="service-block__details" id="detalhe_manutencao" style="display: none;">
-                    <textarea id="desc_manutencao" class="form__textarea" rows="2" placeholder="Ex: Reparação de curto-circuito..."></textarea>
+                    <textarea id="desc_manutencao" class="form__textarea" rows="2" placeholder="Substituição de componentes"></textarea>
                 </div>
             </div>
         </section>
@@ -90,7 +90,7 @@
             <h2 class="card__title">Materiais e Peças Adicionais</h2>
             
             <div class="item-adder">
-                <input type="text" id="item_desc" class="form__input item-adder__input--desc" placeholder="Descrição do item (ex: Disjuntor 20A)">
+                <input type="text" id="item_desc" class="form__input item-adder__input--desc" placeholder="Descrição do item (ex: Memoria ram 8gb)">
                 <input type="number" id="item_valor" class="form__input item-adder__input--price" placeholder="Valor (R$)">
                 <button type="button" class="button button--dark" id="btn-add-item">Adicionar</button>
             </div>

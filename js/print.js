@@ -25,10 +25,11 @@ export function generatePrintableQuote() {
     // 2. MAPEAMENTO DOS SERVIÇOS
     // Define a estrutura base dos serviços fixos para facilitar a organização por "Categorias" no papel
     const serviceItems = [
-        { id: 'montagem', label: 'Montagem de computador', category: 'Montagem de equipamento' },
-        { id: 'limpeza', label: 'Limpeza', category: 'Limpeza de computadores e perifericos' },
-        { id: 'laudo', label: 'Laudo ou inspenção', category: 'laudo ou Inspenção' },
-        { id: 'manutencao', label: 'Manutenção Geral', category: 'Manutenção' }
+        { id: 'eletrica', label: 'Instalação eletrica', category: 'eletrica de equipamento' },
+        { id: 'cameras', label: 'cameras', category: 'cameras de seguranca' },
+        { id: 'cerca', label: 'Cerca Eletrica', category: 'Cerca Eletrica' },
+        { id: 'manutencao', label: 'Manutenção Geral', category: 'Manutenção' },
+        
     ];
 
     // Objeto que vai agrupar os serviços escolhidos pelas suas respetivas categorias
@@ -60,7 +61,7 @@ export function generatePrintableQuote() {
     let servicosHtml = '';
     
     if (servicosCount > 0) {
-        // Itera sobre cada categoria (Ex: "Montagem de equipamento", "laudo ou inspenção")
+        // Itera sobre cada categoria (Ex: "eletrica de equipamento", "laudo ou inspenção")
         for (const category in categorizedServices) {
             // Cria o cabeçalho da categoria
             servicosHtml += `<div class="category-box"><h3 class="category-title">${category}</h3><ul class="servicos-list">`;

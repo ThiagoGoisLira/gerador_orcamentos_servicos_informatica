@@ -25,11 +25,18 @@ export function generatePrintableQuote() {
     // 2. MAPEAMENTO DOS SERVIÇOS
     // Define a estrutura base dos serviços fixos para facilitar a organização por "Categorias" no papel
     const serviceItems = [
+<<<<<<< HEAD
         { id: 'eletrica', label: 'Instalação eletrica', category: 'eletrica de equipamento' },
         { id: 'cameras', label: 'cameras', category: 'cameras de seguranca' },
         { id: 'cerca', label: 'Cerca Eletrica', category: 'Cerca Eletrica' },
         { id: 'manutencao', label: 'Manutenção Geral', category: 'Manutenção' },
         
+=======
+        { id: 'cameras', label: 'Câmeras (Instalação/Manutenção)', category: 'Segurança Eletrônica' },
+        { id: 'cerca', label: 'Cerca Elétrica', category: 'Segurança Eletrônica' },
+        { id: 'instalacao', label: 'Instalação Elétrica (Nova/Reforma)', category: 'Serviços Elétricos' },
+        { id: 'manutencao', label: 'Manutenção Elétrica Geral', category: 'Serviços Elétricos' }
+>>>>>>> parent of bfc425a (Novas funcionalidades)
     ];
 
     // Objeto que vai agrupar os serviços escolhidos pelas suas respetivas categorias
@@ -61,7 +68,11 @@ export function generatePrintableQuote() {
     let servicosHtml = '';
     
     if (servicosCount > 0) {
+<<<<<<< HEAD
         // Itera sobre cada categoria (Ex: "eletrica de equipamento", "laudo ou inspenção")
+=======
+        // Itera sobre cada categoria (Ex: "Segurança Eletrônica", "Serviços Elétricos")
+>>>>>>> parent of bfc425a (Novas funcionalidades)
         for (const category in categorizedServices) {
             // Cria o cabeçalho da categoria
             servicosHtml += `<div class="category-box"><h3 class="category-title">${category}</h3><ul class="servicos-list">`;
@@ -261,7 +272,7 @@ export function generatePrintableQuote() {
             <div class="document-container">
                 <header>
                     <h1>ORÇAMENTO DE SERVIÇOS</h1>
-                    <p>Referente a serviço de informatica</p>
+                    <p>Referente a Sistemas de Segurança e Instalações Elétricas</p>
                 </header>
                 
                 <main>
@@ -301,8 +312,8 @@ export function generatePrintableQuote() {
                 <footer>
                     <div class="validade">Orçamento válido por 15 dias, sujeito a aprovação final.</div>
                     <div class="contact-info">
-                        <p>-- Desenvolvido por Thiago gois --</p>
-                        <p>thiago.gois.lira@gmail.com // Att. Thiago Gois</p>
+                        <p>-- G Eletrica - 41.065.559/0001-87 --</p>
+                        <p>(87) 9.8802-7252 // Att. Thiago Gois</p>
                     </div>
                 </footer>
             </div>

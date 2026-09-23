@@ -19,7 +19,9 @@ import { fetchQuote, saveQuote } from './api.js';
  */
 document.addEventListener('DOMContentLoaded', async function () {
 
+    // ========================================================================
     // LIGAÇÃO DOS BOTÕES PRINCIPAIS (Event Listeners de Clique)
+    // ========================================================================
 
     // Botão de adicionar nova peça/material dinâmico à tabela
     document.getElementById('btn-add-item').addEventListener('click', () => addItem());
@@ -44,7 +46,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
     }
 
+    // ========================================================================
     // LIGAÇÃO DOS INPUTS DINÂMICOS (Recálculo Automático)
+    // ========================================================================
 
     // Quando o utilizador digita nos "Custos Extras", o total é recalculado imediatamente
     document.getElementById('outros_valores').addEventListener('input', calculateAndDisplayTotal);
@@ -66,7 +70,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (valorInput) valorInput.addEventListener('input', calculateAndDisplayTotal);
     });
 
+    // ========================================================================
     // MODO DE EDIÇÃO (REHYDRATION) vs MODO DE CRIAÇÃO
+    // ========================================================================
 
     // Lê a barra de endereços do navegador à procura do parâmetro '?id=' (Ex: index.html?id=5)
     const urlParams = new URLSearchParams(window.location.search);
